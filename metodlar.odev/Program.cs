@@ -4,7 +4,7 @@ namespace metodlar.odev
 {
     class Program
     {
-        public static void CarpimTablosu()
+        public static void CarpimTablosu() //Metod düzenleneceks
         {
             for (int x = 1; x <= 10; x++) 
             {
@@ -14,27 +14,21 @@ namespace metodlar.odev
                 }
             }
         }
-        public static void MetinSay()
-        {
-            Console.WriteLine("İfade Giriniz : ");
-            string metin = Console.ReadLine();
+        
+        public static void MetinSay(string metin)
+        {  
             int uzunluk = metin.Length;
-            Console.WriteLine("Uzunlugu = " + uzunluk);
-            Console.ReadLine();
         }
-        public static void ToplaCarp()
+        public static void ToplaCarp(int x , int y)
         {
             {
-                Console.WriteLine("x : ");
-                var a = int.Parse(Console.ReadLine());
-                Console.WriteLine("y : ");
-                var b = int.Parse(Console.ReadLine());
+                var a = int.Parse(x);
+                var b = int.Parse(y);
                 var carpim = 0;
                 for (var i = 1; i <= a; i++)
                 {
                     carpim += b;
                 }
-                Console.WriteLine($"Carpma islemi sonucu: {carpim}\n\n");
             }
         }
         public static void VizeFinal(int v,
@@ -43,7 +37,6 @@ namespace metodlar.odev
 
             float ort;
             ort = (v * 40 / 100) + (f * 60 / 100);
-            Console.WriteLine("Ortalamanız: " + ort);
 
         }
         public static void  BuyukSayi ()
